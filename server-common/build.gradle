@@ -1,0 +1,13 @@
+//== [s] common library project setting
+bootJar {
+    enabled = false
+}
+jar {
+    enabled = true
+}
+//== [e] common library project setting
+
+dependencies {
+    compile('org.springframework.boot:spring-boot-starter-data-jpa')
+    runtime('com.h2database:h2')
+}
