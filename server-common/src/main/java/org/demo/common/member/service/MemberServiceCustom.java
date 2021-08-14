@@ -13,7 +13,7 @@ public class MemberServiceCustom {
         this.memberRepository = memberRepository;
     }
 
-    public Long singup (Member member) {
-        return memberRepository.save(member).getId();
+    public Member signUp(Member member) {
+        return memberRepository.save(member);
     }
 }

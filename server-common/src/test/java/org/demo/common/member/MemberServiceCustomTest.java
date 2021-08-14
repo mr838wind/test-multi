@@ -21,8 +21,8 @@ public class MemberServiceCustomTest {
     @Test
     public void save() {
         Member member = new Member("test-user", "test-user@gmail.com");
-        Long id = memberServiceCustom.singup(member);
-        assertThat(id, is(1l));
+        Member newMember = memberServiceCustom.signUp(member);
+        assertThat(newMember.getId(), is(1l));
     }
 
 }
