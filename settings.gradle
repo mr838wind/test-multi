@@ -1,4 +1,4 @@
 rootProject.name = 'test-multi'
-include ':server-common'
-include ':server-user'
+include ':server-side:server-common'
+include ':server-side:server-user'
 
